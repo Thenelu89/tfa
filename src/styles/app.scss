@@ -24,11 +24,13 @@
 
 body {
     font-size: 20px;
-    line-height: 1.5;
-    
     overflow-x: hidden;
     max-width: 100%;
     color: #061A29;
+    font-family: 'PPNeueMontreal-Regular', sans-serif;
+    background-image: url(../assets/images/bg-mobile.png);
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 header{
@@ -76,11 +78,16 @@ h1{
 }
 
 h2{
+    font-family: 'PPNeueMontreal-Bold', sans-serif;
     font-size: 28px;
     text-align: left;
     margin-top: 100px;
     margin-bottom: 0px;
     max-width: 400px;
+}
+
+p{
+    line-height: 1.7;
 }
 
 a{
@@ -89,6 +96,7 @@ a{
 }
 
 a:hover{
+    transition: 0.2s;
     opacity: 0.5;
 }
 
