@@ -2,6 +2,34 @@
 @import 'components/type';
 @import '../../node_modules/modern-normalize/modern-normalize';
 
-.school-img {
-    width: 320px;
+
+body {
+    font-size: 20px;
+    line-height: 1.4;
+    letter-spacing: 0.2px;
+    overflow-x: hidden;
+    max-width: 100%;
+}
+
+header{
+    position: absolute;
+    left: 50%;
+    margin-left: -200px;
+    width: 400px;
+    height: 200px;
+    background-color: red;
+}
+
+.header__deco{
+    margin-top: -50px;
+    scale: 1.2;
+}
+
+.header__logo{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top:-100px;
+    z-index: 100;
+    max-width: 150px;
 }
