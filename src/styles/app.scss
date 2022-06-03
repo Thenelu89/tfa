@@ -5,8 +5,8 @@
 @font-face {
     font-family: 'PPNeueMontreal-Medium';
     src: url('../assets/fonts/PPNeueMontreal-Medium.woff2') format('woff2'),
-         url('../assets/fonts/PPNeueMontreal-Bold.woff') format('woff'),
-         url('../assets/fonts/PPNeueMontreal-Bold.ttf')  format('truetype');
+         url('../assets/fonts/PPNeueMontreal-Medium.woff') format('woff'),
+         url('../assets/fonts/PPNeueMontreal-Medium.ttf')  format('truetype');
   }
   @font-face {
     font-family: 'PPNeueMontreal-Bold';
@@ -24,8 +24,8 @@
 
 body {
     font-size: 20px;
-    line-height: 1.4;
-    letter-spacing: 0.2px;
+    line-height: 1.5;
+    
     overflow-x: hidden;
     max-width: 100%;
     color: #061A29;
@@ -43,6 +43,7 @@ header{
 section{
     display: flex;
     flex-direction: column;
+    margin: 200px 55px 0 55px;
 }
 
 .header__deco{
@@ -58,15 +59,14 @@ section{
     margin-top: -50px;
     z-index: 100;
     max-width: 150px;
-}
-
-.section__intro{
-    margin: 200px 50px 0 50px;
+    fill:white;
 }
 
 .section__img{
-    width: 250px;
-    height: 400px;
+    width: 210px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 h1{
@@ -75,6 +75,65 @@ h1{
     text-align: center;
 }
 
-span{
+h2{
+    font-size: 28px;
+    text-align: left;
+    margin-top: 100px;
+    margin-bottom: 0px;
+    max-width: 400px;
+}
+
+a{
+    text-decoration: none;
+    color: #061A29;
+}
+
+a:hover{
+    opacity: 0.5;
+}
+
+.section__para{
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+.section__titre--align{
+    text-align: center;
+}
+
+.section__para--align{
+    text-align: center;
+}
+
+
+.section__titre--color{
     color:#1E3AE0;
+}
+
+.section__scroll--fleche{
+    position: relative;
+    width: 35px;
+    left: 50%;
+    transform:translateX(-50%);
+}
+
+footer{
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 150px 55px 45px 55px;
+}
+
+
+
+small{
+    text-align: center;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    flex-direction:row;
+    padding: 0;
+    gap: 30px;
+    justify-content: center;
 }
