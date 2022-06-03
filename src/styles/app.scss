@@ -2,6 +2,25 @@
 @import 'components/type';
 @import '../../node_modules/modern-normalize/modern-normalize';
 
+@font-face {
+    font-family: 'PPNeueMontreal-Medium';
+    src: url('../assets/fonts/PPNeueMontreal-Medium.woff2') format('woff2'),
+         url('../assets/fonts/PPNeueMontreal-Bold.woff') format('woff'),
+         url('../assets/fonts/PPNeueMontreal-Bold.ttf')  format('truetype');
+  }
+  @font-face {
+    font-family: 'PPNeueMontreal-Bold';
+    src: url('../assets/fonts/PPNeueMontreal-Bold.woff2') format('woff2'),
+         url('../assets/fonts/PPNeueMontreal-Bold.woff') format('woff'),
+         url('../assets/fonts/PPNeueMontreal-Bold.ttf')  format('truetype');
+  }
+  @font-face {
+    font-family: 'PPNeueMontreal-Regular';
+    src: url('../assets/fonts/PPNeueMontreal-Regular.woff2') format('woff2'),
+         url('../assets/fonts/PPNeueMontreal-Regular.woff') format('woff'),
+         url('../assets/fonts/fPPNeueMontreal-Regular.ttf')  format('truetype');
+  }
+  
 
 body {
     font-size: 20px;
@@ -9,15 +28,21 @@ body {
     letter-spacing: 0.2px;
     overflow-x: hidden;
     max-width: 100%;
+    color: #061A29;
 }
 
 header{
     position: absolute;
+    top: 0;
     left: 50%;
-    margin-left: -200px;
+    transform:translateX(-50%);
     width: 400px;
     height: 200px;
-    background-color: red;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
 }
 
 .header__deco{
@@ -28,8 +53,28 @@ header{
 .header__logo{
     position: absolute;
     left: 50%;
+    transform:translateX(-50%) translateY(-50%);
     top: 50%;
-    margin-top:-100px;
+    margin-top: -50px;
     z-index: 100;
     max-width: 150px;
+}
+
+.section__intro{
+    margin: 200px 50px 0 50px;
+}
+
+.section__img{
+    width: 250px;
+    height: 400px;
+}
+
+h1{
+    font-family: 'PPNeueMontreal-Bold', sans-serif;
+    font-size: 33px;
+    text-align: center;
+}
+
+span{
+    color:#1E3AE0;
 }
