@@ -30,6 +30,103 @@ body{
     font-family: 'PPNeueMontreal-Regular', sans-serif;
 }
 
+/// CASE STUDY //// MOBILE /////
+
+.main{
+    margin: 35px;
+    margin-top: 100px;
+}
+
+.section{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-auto-flow: row;
+    grid-column-gap: 10px;
+}
+
+.mgrids1{
+    grid-column-start: 1;
+}
+
+.mgrids2{
+    grid-column-start: 2;
+}
+
+.mgride-1{
+    grid-column-end: -1;
+}
+
+
+.section__gdtitre{
+    font-family: 'PPNeueMontreal-Regular', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-top: 300px;
+}
+
+.section__titre{
+    font-family: 'PPNeueMontreal-Bold', sans-serif;
+    font-weight: 500;
+    font-size: 42px;
+    line-height: 1.2;
+    margin-top: -10px;
+}
+
+.section__sstitre{
+    font-family: 'PPNeueMontreal-Bold', sans-serif;
+    font-weight: 500;
+    font-size: 33px;
+    margin-bottom: 0px;
+    margin-top: 80px;
+}
+
+.section__para{
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.section__gdpara{
+    font-size: 22px;
+    font-family: 'PPNeueMontreal-Medium', sans-serif;
+    margin-bottom: 10px;
+}
+
+ul{
+    list-style: none;
+    font-family: 'PPNeueMontreal-Medium', sans-serif;
+    
+}
+
+li{
+    margin-bottom: 30px;
+}
+
+.img{
+    width: auto;
+    height: 400px;
+}
+
+.section__img{
+    overflow-y: hidden;
+    display: flex;
+    flex-direction: row;
+}
+
+.section__gdimg{
+    width: 100vw;
+    height: auto;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+
+
+/// LANDING PAGE //// MOBILE /////
+
 .body {
     background-image: url(../assets/images/bg-mobile.png);
     background-repeat: no-repeat;
@@ -91,7 +188,7 @@ header{
     transform: translateX(-50%);
 }
 
-h1{
+.element__titre{
     font-family: 'PPNeueMontreal-Bold', sans-serif;
     font-size: 33px;
     line-height: 1.3;
@@ -103,7 +200,7 @@ h1{
     transform: translateX(-50%);
 }
 
-h2{
+.element__sstitre{
     font-family: 'PPNeueMontreal-Bold', sans-serif;
     font-size: 28px;
     text-align: left;
@@ -146,7 +243,7 @@ a:hover{
     text-align: center;
 }
 
-.element__titre--color{
+.color{
     color:#1E3AE0;
 }
 
@@ -168,7 +265,7 @@ small{
     text-align: center;
 }
 
-ul{
+footer ul{
     list-style: none;
     display: flex;
     flex-direction:row;
@@ -176,6 +273,7 @@ ul{
     gap: 30px;
     justify-content: center;
 }
+
 
 @media (min-width: 500px) {
     .body{
