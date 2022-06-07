@@ -56,6 +56,9 @@ body{
     grid-column-end: -1;
 }
 
+.head__log{
+    width:150px;
+}
 
 .section__gdtitre{
     font-family: 'PPNeueMontreal-Regular', sans-serif;
@@ -85,6 +88,7 @@ body{
 .section__para{
     margin-top: 20px;
     font-size: 18px;
+    
 }
 
 .section__gdpara{
@@ -150,7 +154,7 @@ li{
     left: -50px;
 }
 
-header{
+.header{
     position: absolute;
     top: 0;
     left: 50%;
@@ -158,6 +162,13 @@ header{
     width: 400px;
     height: 200px;
 }
+
+.head{
+    position: fixed;
+    left: 30px;
+    top: 30px;
+    z-index: 1000;
+  }
 
 .element{
     display: flex;
@@ -258,11 +269,26 @@ footer{
     display: flex;
     flex-direction: column-reverse;
     margin: 150px 55px 45px 55px;
-    margin: auto;
 }
 
 small{
     text-align: center;
+}
+
+.element__proto{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    margin-left: -177px;
+    margin-top: 20px;
+}
+
+.centrer{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 40px;
 }
 
 footer ul{
@@ -273,6 +299,19 @@ footer ul{
     gap: 30px;
     justify-content: center;
 }
+
+.lien{
+    position: relative;
+    top:4px;
+    width: 45px;
+}
+
+.align--left{
+    position: fixed;
+    left: 450px;
+    top: 10px;
+    z-index: 1000;
+  }
 
 
 @media (min-width: 500px) {
@@ -287,9 +326,130 @@ footer ul{
        
         background-image: url(../assets/images/bg-tablet.png);
     }
+
+    
+
+    .section__img{
+        margin-top: 50px;
+        margin-bottom: 35px;
+    }
+
+    .section__list{
+        max-width: 400px;
+        
+    }
 }
 
 @media (min-width: 1380px) {
+
+     //CASE STUDY // DESKTOP //
+
+      .section__titre{
+          font-size: 81px;
+          max-width: 800px;
+      }
+
+     .dgride-1 {
+        grid-column-end: -1;
+      }
+      
+     .dgrids1{
+        grid-row-start: 1;
+    }
+    
+    .dgrids2{
+        grid-row-start: 2;
+    }
+
+    .dcgrids1{
+        grid-column-start: 1;
+    }
+    
+    .dcgrids2{
+        grid-column-start: 2;
+    }
+
+    .dcgrids3{
+        grid-column-start: 3;
+    }
+
+    .dcgrids4{
+        grid-column-start: 4;
+    }
+
+    .dcgrids5{
+        grid-column-start: 5;
+    }
+
+    .dcgrids6{
+        grid-column-start: 6;
+    }
+    
+    .dcgride-1{
+        grid-column-end: -1;
+    }
+
+    .section{
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-auto-flow: row;
+        grid-column-gap: 10px;
+    }
+    
+    .section__para{
+        max-width: 600px;
+        font-size: 22px;
+    }
+
+    .align--text{
+        margin-top: 90px;
+    }
+    
+    .align--text2{
+        margin-top: -40px;
+    }
+    
+
+    .section__gdpara{
+        max-width: 600px;
+        font-size: 26px;
+    }
+
+    .section__img{
+        margin-top: 100px;
+        margin-bottom: 70px;
+    }
+
+    .section__list{
+        max-width:600px ;
+    }
+
+    footer{
+        display: flex;
+        flex-direction: row;
+        justify-content:space-between;
+        margin: 150px 55px 20px 55px;
+    }
+    
+    small{
+        padding: 0;
+        margin: 0;
+        height: 25px;
+    }
+    
+    footer ul{
+        list-style: none;
+        height: 30px;
+        padding: 0;
+        gap: 30px;
+        margin-top:-3px;
+        justify-content: center;
+    }
+    
+
+
+    //LANDING PAGE // DESKTOP //
+
     .body{
        
         background-image: url(../assets/images/bg-desktop.png);
@@ -318,18 +478,6 @@ footer ul{
         width: 245px;
     }
     
-    h1{
-        font-size: 46px;
-        line-height: 1.3;
-        max-width: 550px;
-        min-width: 450px;
-    }
-    
-    h2{
-        font-size: 38px;
-        max-width: 450px;
-        text-align: center;
-    }
 
     p{
         font-size: 20px;
