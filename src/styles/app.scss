@@ -164,7 +164,7 @@ li{
 }
 
 .head{
-    position: fixed;
+    position:absolute;
     left: 30px;
     top: 30px;
     z-index: 1000;
@@ -453,15 +453,6 @@ footer ul{
     .body{
        
         background-image: url(../assets/images/bg-desktop.png);
-    }
-
-    header{
-        position: absolute;
-        top: 0;
-        left: 50%;
-        transform:translateX(-50%);
-        width: 800px;
-        height: 400px;
     }
 
     .header__deco{
